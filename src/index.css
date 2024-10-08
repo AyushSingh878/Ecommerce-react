@@ -1,13 +1,30 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
 }
+
+/* Custom styles for Toastify notifications */
+/* Adjust styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .Toastify__toast-container {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .Toastify__toast {
+      margin: 2rem 0 0 4rem;
+      width: 80%;
+      border-radius: 0;
+    }
+  }
+  
